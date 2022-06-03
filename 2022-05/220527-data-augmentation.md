@@ -17,7 +17,7 @@ Deep Learning 모델 성능 개선을 위한 Data Augmentation 방법들과 효�
 
 - https://arxiv.org/pdf/1710.09412.pdf
 - 한 줄 요약: 두 개의 샘플에 대해서, input space와 output space를 각각 동일한 비율로 linear interpolate한 샘플 생성
-- 장점/효과: Decision boundarie가 클래스에서 클래스로 선형적으로 변하기 때문에 더 smoother한 uncertainty estimation 제공
+- 장점/효과: Decision boundary가 클래스에서 클래스로 선형적으로 변하기 때문에 더 smooth한 uncertainty estimation 제공
 
 ### Manifold Mixup (ICML 2019)
 
@@ -28,7 +28,7 @@ Deep Learning 모델 성능 개선을 위한 Data Augmentation 방법들과 효�
 ### AugMix (ICLR 2020)
 
 - https://arxiv.org/pdf/1912.02781.pdf
-- 한 줄 요약: 두 개의 샘플을 합치는 방법이 아닌, 하나의 샘플에 여러 복합적인 augmentation 방법 적용한 뒤에도 동일한 예측을 하도록 KLD 형태의 ConsistencyLoss를 regularizer로 사용하는 방법
+- 한 줄 요약: 두 개의 샘플을 합치는 방법이 아닌, 하나의 샘플에 여러 복합적인 augmentation 방법 적용한 뒤에도 동일한 예측을 하도록 KLD 형태의 consistency loss를 regularizer로 사용하는 방법
 - 장점/효과: Robustness 관점에서 좋은 성능 (Noise에 강건함)
 
 ### AutoAugment (CVPR 2019)
